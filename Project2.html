@@ -34,15 +34,17 @@
         <h1 id="mainTitle">
             Graphics Project
            </h1>
-         
            <a style="display: block;margin: auto;text-align: center;" href="https://github.com/MathiasRadder/Raytracing " >Raytracer source code</a>
             <a style="display: block;margin: auto;text-align: center;" href="https://github.com/MathiasRadder/DualRasterizer" >Dual rasterizer source code</a>
            
+           <a style="display: block;margin-top: 2rem;text-align: center;">On this project, I learned how to do raytracing and rasterizer in a c++ custom school engine.</a>
+            <a style="display: block;margin:auto;text-align: center;">For rasterizing it was in software and hardware. The project was created from scratch, aside from the basics of the engine</a>
+            <a style="display: block;margin:auto;text-align: center;">During that we also added more features to the engines.</a>
 
-           <div style="margin-top: 5%;" class="mainSection">
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
             <div></div>
             <span>
-                <img src="Images/GraphicProg/Raytracer_REFERENCE.png" alt="png of raytracing">
+                <img src="Images/GraphicProg/Raytracing1.gif" alt="png of raytracing">
                 <img src="Images/GraphicProg/Raytracer_BUNNY.png" alt="png of raytracing">
             </span>
             <span>
@@ -51,23 +53,31 @@
                     <a  href="https://github.com/MathiasRadder/Raytracing " >Raytracer source code</a>
                 </p>
                 <p>
-
-                   Coming soon
+                   This was one of the project that I enjoyed more and could put more effort.
+                   Due to having more time to understand the whole process!
                 </p>
                 <p>
-                    Coming soon
-                </p>
-                  
-                <p>
-                    Coming soon
+                    While creating the raytracer I did some more work to improve performance and making the code clean, 
+                    I added many classes like objects for geometry, different light classes and the material manager. 
                 </p>
                 <p>
-                    Coming soon
+                    From the camera-position, a ray is shot towards a pixel, after which the ray sees which objects it hits, 
+                    and picks the closest object. With the pixel and the closest object known, 
+                    it will now look which light is touching that object and where the shadow should be on the object in question. 
+                    The program then uses this information, along with the material type, to make sure the pixel gets the right color.
                 </p>
-                <p>   
-                    Coming soon
+                <p>
+                    So first the program loops through each pixel, then each object, 
+                    on that closest object it loops through each ray of light, per ray of light it calculates the required shadow. 
+                    This is not good for performance, so the program loops through each object again to see if there is any object in between the light point and closest object. 
+                    After all of this, we have all the information we need. 
                 </p>
-                       
+                <p>
+                    During this process, we have also calculated the type of object you’re dealing with, like sphere, plane or triangle. 
+                    Since we know how to calculate a triangle, 
+                    we also took it a step further so that we could render a mesh that is made from triangles. 
+                    The triangle mesh is optimized with a bounding box.
+                </p>                   
             </span>
             <div></div>
         </div>
@@ -78,8 +88,8 @@
     <div style="margin-top: 5%;" class="mainSection">
         <div></div>
         <span>
-        <img src="Images/GraphicProg/DualRasterizer_Software.png" alt="png of software">
-        <img src="Images/GraphicProg/DualRasterizer_DirectX.png" alt="png of hardware">
+        <img src="Images/GraphicProg/RasterizingSoftware.gif" alt="png of software">
+        <img src="Images/GraphicProg/RasterizingHardware.gif" alt="png of hardware">
         </span>
         <span>
             <p>
@@ -90,15 +100,24 @@
                 <a  href="https://github.com/MathiasRadder/DualRasterizer " >Dual rasterizer source code</a>
             </p>
             <p>
-                Coming soon
-
+                Here we wrote a phong shader for both software and hardware to use.
+                We also included frustrum culling for both.
+                Note It also only uses one light source, which is a directional light.
             </p>
             <p>
-                Coming soon
+                <h2>Software</h2>
             </p>
             <p>
-                Coming soon
+                So, per triangle the program loops through the pixels, but before it does that it creates a bounding box so the pixels have a specific starting point and end point, as to increase performance. After that it looks if the pixel is present in the triangle, checks depth and creates the pixel vertex via Barycentric coordinates and interpolated calculations of the normal, tangent, and more, to get all the necessary info to shade.
+                For the last part of this process we will shade the pixel. The program will calculate the light and sample in the textures to get the correct color for the pixel.
             </p>
+            <p>
+                <h2>Hardware</h2>
+            </p>
+            <p>
+                Here we worked with DirectX11 and made it so that you can switch from software to hardware and vice versa. 
+                We added some transparency to the fireFX and made the phong shader into an HLSL.
+         </p>
         </span>
         <div></div>
     </div>
