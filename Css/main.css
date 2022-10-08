@@ -61,7 +61,12 @@ nav {
     display: inline-block;
     
   }
-  
+  .textMid
+  {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;

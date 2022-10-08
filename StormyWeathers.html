@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar">
+        <div><h1>Mathias Radder</h1></div>
+        <div></div>
+        <div class="button" ><a href="index.html" class="button"> Home </a></div>
+          <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+        <div class="dropdown">
+            <div class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="CARProject.html">C.A.R</a>
+                    <a href="GraphicsProject.html">Graphics Project</a>
+                    <a href="UnityProject.html">Unity Prototype</a>
+                    <a href="UE4Project.html">UE4 Prototype</a>
+                    <a href="StormyWeathers.html">Stormy Weathers</a>
+             </div>
+          </div></div>
+        <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->
+
+        <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+    </nav>
+
+
+    <!-- Main Title, photo and about -->
+    <section style="display: block; margin: auto;">
+        <h1 id="mainTitle">
+            Stormy Weathers
+           </h1>
+           <a class="textMid" href="https://lucylesire.itch.io/stormy-weathers " >Stormy Weathers itch</a>
+           
+           <a class="textMid">We created this game during a game jam in a group.</a>
+            <a class="textMid">It is a flying game where you have to fly in calm and stormy areas and try to survive as long as possible.  </a>
+
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
+            <div></div>
+            <span>
+                <img  src="Images/StormyWeathers/Example1.png" alt="png of unity prototype">
+                <img src="Images/StormyWeathers/Example2.png" alt="png of unity prototype">
+            </span>
+            <span>
+                <h2>The game</h2>
+                <p> 
+                    <a  href="https://lucylesire.itch.io/stormy-weathers " >Stormy Weathers itch</a>
+                </p>
+                <p>
+                    This was a group project with four people, more info on the itch page about it!
+                    It a fun time and good teamwork that made this game. We only had four days to create the game from scratch. 
+                    The game is made in unity.
+                    
+                </p>
+                <p>
+                    Our keywords for the game was peace and chaos and so we created a chaotic flying game with some peaceful intervals. 
+                </p>
+                <p>
+                    For only four days our game was a bit ambiguous, 
+                    but we still learned a lot from it! I learned a lot how to work in Unity and creating the planes movement.
+                </p>                  
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+    <!--Post Mortum-->
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+            <img style="margin-left: -2rem;" src="Images/StormyWeathers/Example3.png" alt="png of unity prototype">
+            <img style="margin-left: -2rem;" src="Images/StormyWeathers/Example4.png" alt="png of unity prototype">
+        </span>
+        <span>
+            <p>
+                <h2>What i learned and did</h2>
+            <p>
+                -	I created the movement and physics of the plane.
+            </p>
+            <p>
+                -	Made sure that the game loop was in order.
+            </p>
+            <p>
+                -	Creating the mechanics of the UFO and Flying Bomber.
+            </p>
+            <p>
+                -	Replacing simple animation with code.
+            <p>
+                -	Working well together with teammates in a short amount of time.
+            </p>
+            <p>
+                -	Created part of the lighting.
+            </p>
+            <p>
+                -	Helping my fellow programmer and she also helping me with parts.
+            </p>
+        </span>
+        <div></div>
+    </div>
+</section>
+
+
+
+</section>
+
+    <!--Contact-->
+    <h2  class="leftTitle">Contact</h2>
+
+    <section class="contactGrid">
+        <a  href="Mathias.radder@hotmail.com" class="hoverable">
+            <img   src="Images/emailiconSmall.png" alt="Email">
+        </a>
+     
+        <a  href="https://mathias-radder.itch.io/" class="hoverable">
+            <img   src="Images/itch-io-icon.png" alt="Itch">
+        </a>
+       
+        <a  href="https://www.linkedin.com/in/mathias-radder-953841251/" class="hoverable">
+            <img  src="Images/LinkedIn_icon.png" alt="LinkedIn">
+        </a>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script>          
+    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // when scrolling down.
+        var scrolPos = 0;
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+            var newPos = document.documentElement.scrollTop;
+            var navbar = document.getElementById("navbar");
+
+            if(!isMobile)
+            {
+                navbar.style.transform = "translateY(0%)";
+                return;
+            }
+
+            if(newPos <= scrolPos)
+            {
+                navbar.style.transform = "translateY(0%)";
+            }
+            else
+            {
+                if(newPos > navbar.scrollHeight)
+                    navbar.style.transform = "translateY(-100%)";
+            }
+            scrolPos = newPos;
+        }
+    </script>
+</body>
+</html>

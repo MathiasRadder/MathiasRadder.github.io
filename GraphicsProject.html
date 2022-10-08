@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar">
+        <div><h1>Mathias Radder</h1></div>
+        <div></div>
+        <div class="button" ><a href="index.html" class="button"> Home </a></div>
+          <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+        <div class="dropdown">
+            <div class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="CARProject.html">C.A.R</a>
+                    <a href="GraphicsProject.html">Graphics Project</a>
+                    <a href="UnityProject.html">Unity Prototype</a>
+                    <a href="UE4Project.html">UE4 Prototype</a>
+                    <a href="StormyWeathers.html">Stormy Weathers</a>
+             </div>
+          </div></div>
+        <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->
+
+        <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+    </nav>
+
+
+    <!-- Main Title, photo and about -->
+    <section style="display: block; margin: auto;">
+        <h1 id="mainTitle">
+            Graphics Project
+           </h1>
+           <a class="textMid" href="https://github.com/MathiasRadder/Raytracing " >Raytracer source code</a>
+            <a class="textMid" href="https://github.com/MathiasRadder/DualRasterizer" >Dual rasterizer source code</a>
+           
+           <a class="textMid">On this project, I learned how to do raytracing and rasterizer in a c++ custom school engine.</a>
+            <a class="textMid">For rasterizing it was in software and hardware. The project was created from scratch, aside from the basics of the engine</a>
+            <a class="textMid">During that we also added more features to the engines.</a>
+
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
+            <div></div>
+            <span>
+                <img src="Images/GraphicProg/Raytracing1.gif" alt="png of raytracing">
+                <img src="Images/GraphicProg/Raytracer_BUNNY.png" alt="png of raytracing">
+            </span>
+            <span>
+                <h2>Raytracing</h2>
+                <p> 
+                    <a  href="https://github.com/MathiasRadder/Raytracing " >Raytracer source code</a>
+                </p>
+                <p>
+                   This was one of the project that I enjoyed more and could put more effort.
+                   Due to having more time to understand the whole process!
+                </p>
+                <p>
+                    While creating the raytracer I did some more work to improve performance and making the code clean, 
+                    I added many classes like objects for geometry, different light classes and the material manager. 
+                </p>
+                <p>
+                    From the camera-position, a ray is shot towards a pixel, after which the ray sees which objects it hits, 
+                    and picks the closest object. With the pixel and the closest object known, 
+                    it will now look which light is touching that object and where the shadow should be on the object in question. 
+                    The program then uses this information, along with the material type, to make sure the pixel gets the right color.
+                </p>
+                <p>
+                    So first the program loops through each pixel, then each object, 
+                    on that closest object it loops through each ray of light, per ray of light it calculates the required shadow. 
+                    This is not good for performance, so the program loops through each object again to see if there is any object in between the light point and closest object. 
+                    After all of this, we have all the information we need. 
+                </p>
+                <p>
+                    During this process, we have also calculated the type of object you’re dealing with, like sphere, plane or triangle. 
+                    Since we know how to calculate a triangle, 
+                    we also took it a step further so that we could render a mesh that is made from triangles. 
+                    The triangle mesh is optimized with a bounding box.
+                </p>                   
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+    <!--Post Mortum-->
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+        <img style="margin-left: -2rem;" src="Images/GraphicProg/RasterizingSoftware.gif" alt="png of software">
+        <img style="margin-left: -2rem;" src="Images/GraphicProg/RasterizingHardware.gif" alt="png of hardware">
+        </span>
+        <span>
+            <p>
+                <h2>Dual rasterizer</h2>
+            </p>
+            <p>
+
+                <a  href="https://github.com/MathiasRadder/DualRasterizer " >Dual rasterizer source code</a>
+            </p>
+            <p>
+                Here we wrote a phong shader for both software and hardware to use.
+                We also included frustrum culling for both.
+                Note It also only uses one light source, which is a directional light.
+            </p>
+            <p>
+                <h2>Software</h2>
+            </p>
+            <p>
+                So, per triangle the program loops through the pixels, but before it does that it creates a bounding box so the pixels have a specific starting point and end point, as to increase performance. After that it looks if the pixel is present in the triangle, checks depth and creates the pixel vertex via Barycentric coordinates and interpolated calculations of the normal, tangent, and more, to get all the necessary info to shade.
+                For the last part of this process we will shade the pixel. The program will calculate the light and sample in the textures to get the correct color for the pixel.
+            </p>
+            <p>
+                <h2>Hardware</h2>
+            </p>
+            <p>
+                Here we worked with DirectX11 and made it so that you can switch from software to hardware and vice versa. 
+                We added some transparency to the fireFX and made the phong shader into an HLSL.
+         </p>
+        </span>
+        <div></div>
+    </div>
+</section>
+</section>
+
+    <!--Contact-->
+    <h2  class="leftTitle">Contact</h2>
+
+    <section class="contactGrid">
+        <a  href="Mathias.radder@hotmail.com" class="hoverable">
+            <img   src="Images/emailiconSmall.png" alt="Email">
+        </a>
+     
+        <a  href="https://mathias-radder.itch.io/" class="hoverable">
+            <img   src="Images/itch-io-icon.png" alt="Itch">
+        </a>
+       
+        <a  href="https://www.linkedin.com/in/mathias-radder-953841251/" class="hoverable">
+            <img  src="Images/LinkedIn_icon.png" alt="LinkedIn">
+        </a>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script>          
+    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // when scrolling down.
+        var scrolPos = 0;
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+            var newPos = document.documentElement.scrollTop;
+            var navbar = document.getElementById("navbar");
+
+            if(!isMobile)
+            {
+                navbar.style.transform = "translateY(0%)";
+                return;
+            }
+
+            if(newPos <= scrolPos)
+            {
+                navbar.style.transform = "translateY(0%)";
+            }
+            else
+            {
+                if(newPos > navbar.scrollHeight)
+                    navbar.style.transform = "translateY(-100%)";
+            }
+            scrolPos = newPos;
+        }
+    </script>
+</body>
+</html>
