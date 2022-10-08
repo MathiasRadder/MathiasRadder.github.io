@@ -38,6 +38,11 @@ nav {
     
 }
 
+.button a{
+    color: var(--red);
+    text-decoration: none;
+}
+
 .button:hover {
     filter: grayscale(0.5);
     cursor: pointer;
@@ -121,7 +126,7 @@ nav {
     display: block;
     margin: auto;
     text-align: left;
-    margin-left: 10rem;
+   
     margin-top: 4rem;
     font-size: 2em;
     padding-bottom: 2rem; 
@@ -190,6 +195,7 @@ nav {
     margin-bottom: 2rem;
     display: grid;
     grid-template-columns: auto auto auto;
+    text-align: center;
 }
 
 
