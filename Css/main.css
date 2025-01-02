@@ -21,10 +21,12 @@ nav {
     color: var(--red);
     box-shadow: 0px 1px 5px var(--black);
 
-    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-columns: auto 1fr auto auto auto auto auto;
     padding: 0 3rem 0 3rem;
     column-gap: 1rem;
     align-items: center;
+    place-items: center;
+    column-count: 1;
 
     transition: transform 0.5s ease-in-out;
 }

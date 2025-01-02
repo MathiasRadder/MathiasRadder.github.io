@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar" >
+        <h1>Mathias Radder</h1>
+        <div></div>
+        <div class="button" ><a href="index.html" > Home </a></div>
+           <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+            
+      <div class="dropdown">
+             <div class="dropbtn">My projects</button>
+                 <div class="dropdown-content">
+                     <a href="RemnantsMod.html">Remnants</a>
+                     <a href="DnDCampaign.html">Lore and setup (TTRPG)</a>
+                     <a href="DnDEncountersAndDungeons.html">Encounters and dungeons (TTRPG)</a>
+              </div>
+           </div></div>
+         <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->    
+         <div class="dropdown">
+             <div class="dropbtn">Intership projects</button>
+                 <div class="dropdown-content">
+                     <a href="LiveOpsProject.html">Live Ops</a>
+                     <a href="OffshoreWindParkProject.html">Offshore Wind Park</a>
+                     <a href="WastePikeProject.html">Waste Pike</a>
+                     <a href="DoesItStackGameJam.html">Does It Stack?</a>
+              </div>
+           </div></div>
+           <div class="dropdown">
+             <div class="dropbtn">School projects</button>
+                 <div class="dropdown-content">
+                     <a href="CARProject.html">C.A.R</a>
+                     <a href="GraphicsProject.html">Graphics Project</a>
+                     <a href="UnityProject.html">Unity Prototype</a>
+                     <a href="UE4Project.html">UE4 Prototype</a>
+                     <a href="StormyWeathers.html">Stormy Weathers</a>
+              </div>
+           </div></div>
+ 
+         <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+     </nav>
+ 
+
+
+    <!-- Main Title, photo and about -->
+    <section style="display: block; margin: auto;">
+        <h1 id="mainTitle">
+            Offshore Wind Park
+           </h1>
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
+            <div></div>
+            <span>
+                <img src="Images/OffshoreWindPark/SeaWindMill.jpg" alt="jpg of Offshore wind mill">
+                <img src="Images/OffshoreWindPark/MadeUIP2.jpg" alt="jpg Of first part of UI">
+            </span>
+            <span>
+                <h2>What I did in the project</h2>
+                <p>
+                    A big Unity project that is meant to help people train at sea. 
+                    This was already an ongoing project and my task was to add a UI that gives info on structures at sea, 
+                    about their status, issues and the option to handle the situation by for example assigning people to the task or issue.
+                </p>
+                <p>
+                    This task took a week or two to finish. 
+                    I worked alongside someone who works there and learned a lot from the coding convention and how the project worked.
+                </p>
+                <h2>What I learned</h2>
+                <p>
+                    -  Streaming data structure: one of the challenges was correctly processing and converting the inconsistent data that was received. 
+                    I programmed data processing for the different offshore structures The equipment of each offshore structure consist of a receiver of the data, 
+                    a converter of the data and a class that displays the data for the UI of that building. 
+                    Depending on the specific functionalities of the different unique offshore structures, a custom converter is used.
+                </p>
+                <p>
+                    -   UI 2D to 3D and vice versa: The interesting points about the UI was converting a 2D object in 3D space to the camera in 2D space 
+                    so that the icons would indicate in 2D space where the offshore structures is in 3D space.
+                </p>
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+            <img style="margin-left: -2rem;" src="Images/OffshoreWindPark/StructureForDataAndUI.png" alt="png of structure of data and ui">
+            <img style="margin-left: -2rem;" src="Images/OffshoreWindPark/MadeUIP1.jpg" alt="jpg of the ui">
+        </span>
+        <span>
+            <p>
+                <h2>Struggles and how I overcame them</h2>
+            <p>
+                One of the issues of the task was order of operation some objects that depended on the camera or other objects, 
+                couldn’t function because sometimes that object did not exist yet. 
+                So I could not lean or trust when an object was created that I needed.
+            </p>
+            <p>
+                The way I overcame this issue was by making sure that everything else worked and that It blocked all the features 
+                of a structure when that feature was not complete yet.
+                An example would be getting the memory location of where the camera would be created, 
+                rather then the camera itself so it could overcome the issue.
+            </p>
+            <p>
+                <h2>What I will do better next time</h2>
+            <p>
+            <p>
+                In this project I learned not to only rely on order of operation and the safety around it. 
+                This has made me be more watchful and careful about it.
+            <p>
+        </span>
+        <div></div>
+    </div>
+</section>
+
+
+
+</section>
+
+    <!--Contact-->
+    <section class="contactGrid" >
+        <h2  class="leftTitle">Contact</h2>
+        <div></div>
+        <div></div>
+        <a  href="mailto: Mathias.radder@hotmail.com" class="hoverable">
+            <img   src="Images/emailiconSmall.png" alt="Email">
+        </a>
+     
+        <a  href="https://mathias-radder.itch.io/" class="hoverable">
+            <img   src="Images/itch-io-icon.png" alt="Itch">
+        </a>
+       
+        <a  href="https://www.linkedin.com/in/mathias-radder-953841251/" class="hoverable">
+            <img  src="Images/LinkedIn_icon.png" alt="LinkedIn">
+        </a>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script>          
+    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // when scrolling down.
+        var scrolPos = 0;
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+            var newPos = document.documentElement.scrollTop;
+            var navbar = document.getElementById("navbar");
+
+            if(!isMobile)
+            {
+                navbar.style.transform = "translateY(0%)";
+                return;
+            }
+
+            if(newPos <= scrolPos)
+            {
+                navbar.style.transform = "translateY(0%)";
+            }
+            else
+            {
+                if(newPos > navbar.scrollHeight)
+                    navbar.style.transform = "translateY(-100%)";
+            }
+            scrolPos = newPos;
+        }
+    </script>
+</body>
+</html>

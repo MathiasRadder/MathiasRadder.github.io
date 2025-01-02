@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar" >
+        <h1>Mathias Radder</h1>
+        <div></div>
+        <div class="button" ><a href="index.html" > Home </a></div>
+           <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+            
+      <div class="dropdown">
+             <div class="dropbtn">My projects</button>
+                 <div class="dropdown-content">
+                     <a href="RemnantsMod.html">Remnants</a>
+                     <a href="DnDCampaign.html">Lore and setup (TTRPG)</a>
+                     <a href="DnDEncountersAndDungeons.html">Encounters and dungeons (TTRPG)</a>
+              </div>
+           </div></div>
+         <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->    
+         <div class="dropdown">
+             <div class="dropbtn">Intership projects</button>
+                 <div class="dropdown-content">
+                     <a href="LiveOpsProject.html">Live Ops</a>
+                     <a href="OffshoreWindParkProject.html">Offshore Wind Park</a>
+                     <a href="WastePikeProject.html">Waste Pike</a>
+                     <a href="DoesItStackGameJam.html">Does It Stack?</a>
+              </div>
+           </div></div>
+           <div class="dropdown">
+             <div class="dropbtn">School projects</button>
+                 <div class="dropdown-content">
+                     <a href="CARProject.html">C.A.R</a>
+                     <a href="GraphicsProject.html">Graphics Project</a>
+                     <a href="UnityProject.html">Unity Prototype</a>
+                     <a href="UE4Project.html">UE4 Prototype</a>
+                     <a href="StormyWeathers.html">Stormy Weathers</a>
+              </div>
+           </div></div>
+ 
+         <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+     </nav>
+ 
+
+
+    <!-- Main Title, photo and about -->
+    <section style="display: block; margin: auto;">
+        <h1 id="mainTitle">
+            Remnants mod
+           </h1>
+           <a class="textMid" href="https://github.com/KawaiiBone/LethalCompanyRemnants" >Remnants mod github</a>
+           <a class="textMid" href="https://thunderstore.io/c/lethal-company/p/KawaiiBone/Remnants/" >Remnants Thunderstore page</a>
+           <div></div>
+
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
+            <div></div>
+            <span>
+                <img  src="Images/RemnantsMod/RemnantsModIcon.png" alt="png of the icon of the mod">
+            </span>
+            <span>
+                <h2>About this project</h2>
+                <p>
+                    Remnants is a mod that I made for the game Lethal Company and has more than 400 000 total downloads. 
+                    The mod’s main mechanic duplicates store items that can normally only be acquired by trading currency for it, 
+                    and makes the duplicate version to be found in the game, as if it was a remnant of those who left it behind.
+                    This project called Remnants was made within a couple of months, where I had to learn a lot of new tools, 
+                    libraries and structures to make this mod.
+                    
+                </p>
+                <h2>Why did I make this mod</h2>
+                <p>
+                    The mod was created for the intention of learning more in depth how C# works, learning game design more, 
+                    understanding GitHub further and how to maintain a live project. 
+                    I also wanted to challenge myself in how far I can take this project in size. 
+                    Another focus was compatibility with other mods so that it can use their content as well.
+                    
+                </p>
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+    
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+            <img style="margin-left: -2rem;" src="Images/RemnantsMod/DuplicateItemProcess.png" alt="png of unity prototype">
+        </span>
+        <span>
+            <p>
+                <h2>Main mechanics</h2>
+            <p>
+                -   The mod mains mechanic duplicates store items that can normally only be acquired by trading currency for it, 
+                and changes the duplicate version to be found in the game, as if it was a remnant of those who left it behind. 
+                It also handles spawning on network, saving and cleaning up those items.
+            </p>
+            <p>
+                -   It spawns a couple of different corpses with random suits. 
+                The type of corpses that spawn in an area is determent on what kind of monster lurk around there in relative to their chance of being there. 
+                On that they have random suits on them that are network synced and saved.
+            </p>
+            <p>
+                -   lot of things can be changed via a config file: spawning item and corpses, saving, 
+                disable items and suits to use in this mod. Self generated config info for items, areas, suits and corpses. 
+            </p>
+            <p>
+                -   I put a lot of effort in making this mod highly compatible with other mods, 
+                making sure that their custom store items can also be turned into remnant items, 
+                along with their custom suits and areas so that this mod can use it and work with it well.
+            </p>
+        </span>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+            <img style="margin-left: -2rem;" src="Images/RemnantsMod/GetItemsWorkAround.png" alt="png of how items are collected other then (Object.FindObjectOfType)">
+            <img style="margin-left: -2rem;" src="Images/RemnantsMod/LoadInGeneratedConfigData.png" alt="png of the steps how I collected the generated data before loading the config">
+        </span>
+        <span>
+            <p>
+                <h2>Struggles and how I overcame them</h2>
+            <p>
+                -   The filter issue: The first hurdle I had was learning how to safely handle unknown data in this project as 
+                this project would interact a lot with other mods.
+               
+            </p>
+            <p>
+                An example would be modded items, I did not know what state the item was in, when it was created, 
+                ready to use or even meant to be used. This problem caused a lot of errors and crashes when using modded items. 
+                The first step on how I overcame this issue, was making sure that the mod would run without problem even if it 
+                couldn't transform the store item into a remnant item. I used the try and catch method to make sure that it would 
+                stop, when encountering the error, so that the mod still runs and the other transformed items can still be used. 
+                The next step was filtering the non usable items out. This came in three parts: 
+                a blacklist, If I already had that item transformed ,checking if the item is of the type I need to transform ,
+                If the content of the item is suitable and stable to use and lastly another check if the item is truly a store item by checking certain values.
+               
+            </p>
+            <p>
+                -   The Unity/BepInEx bug: The biggest hurdle was finding out why the items that I duplicated and used were not being able to be found by normal means. 
+                Object.FindObjectOfType<>() This meant that when cleaning up or scanning for the items did not work on remnant items. 
+                It caused a lot of issues for the mod and made it so that the game would slowly break, the longer you play. 
+                This is a strange issue that I could not find a reason why online or in documentation. 
+               
+            </p>
+            <p>
+                So, the other way I fixed this issue was creating a different way of finding and cleaning up remnant items. 
+                I did it by collecting all items that spawned on the network in a list. 
+                That does mean I had to change all places where they used Object.FindObjectOfType to normally find those items. 
+                This worked by using the library Harmony 2 I modified the functions via post compiled code.
+            </p>
+            <p>
+                -   Generated config problem: Due to this mod gathering data from the game and other mods, 
+                it would mean I had to generate that extra data in the config, which it was not specifically designed for. 
+                The problem with that was loading the config file at the start would mean that the generated parts would not be read since it would only base itself off the existing code. 
+                This means the extra data that was generated would not work anymore. 
+                I fixed this issue by reading and gathering the generated data before the config system does and putting it in containers to be read as normal code.
+
+            </p>
+        </span>
+        <div></div>
+    </div>
+</section>
+
+
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+            <p>
+                <h2>What I learned in this project</h2>
+            <p>
+                -   Common Intermediate Language (CIL), bytecode: during modding I had to use bytecode if I wanted to make this mod works as well as possible. 
+                I learned how to use its instructions and make it work along C# using the Harmony 2 library.
+               
+            </p>
+            <p>
+                -   Communication with users: During the release and continuing working on the project, 
+                I had a lot of people on different platforms that helped me by giving their opinion, 
+                feedback and finding issues on this mod. 
+                I learned how vital this was and made sure that everyone deserved to be heard and respected. With that, 
+                it created a beautiful cycle of people feeling welcome and them returning the energy by giving feedback and finding issues on this mod.
+            </p>
+            <p>
+                -    Creating structures that work well with the game and other mods while also being as separated as possible. 
+                It was difficult to do since I had to work with data that I did not know the state of. 
+                To prevent the game from breaking I added safety features like filters and catching errors. 
+            </p>
+        </span>
+        <span>
+            <p>
+                <h2>What I could have done better</h2>
+            <p>
+                -   Next time I start a project, I will spend more time in prototyping, reading documentation and planning. 
+                Because I realized I had much to learn when uploading the first version of this project.
+               
+            </p>
+            <p>
+                -   Add more test cases and fail saves for certain features that will interact with data that I don’t know the state of. 
+                This was an issue at the start where this mod would not work well or crash when interacting with some other mods.
+            </p>
+            <p>
+                -   Structuring code in a more safe and clear manner. Because debugging is more difficult in modding, 
+                it becomes clear when you have a big project that it is difficult to find problems. 
+                Next time I would put a lot of effort learning what structures I am working with and safely test and try to see what structure to create for them.
+            </p>
+        </span>
+        <div></div>
+    </div>
+</section>
+
+
+    <div style="margin-top: 5%;" class="midTitle">
+        <img width="85%" style="vertical-align:middle;margin:5% 5%" src="Images/RemnantsMod/EntireGameLoop.png" alt="png of the entire game loop">
+    </div>
+</section>
+
+<section style="display: block; margin: auto;">
+    <a class="textMid" href="https://github.com/KawaiiBone/LethalCompanyRemnants" >Remnants mod github</a>
+    <a class="textMid" href="https://thunderstore.io/c/lethal-company/p/KawaiiBone/Remnants/" >Remnants Thunderstore page</a>
+<section>
+
+    <section>
+        <div style="margin-top: 5%;" class="mainSection">
+            <div></div>
+            <span>
+                <p>
+                    <h2>Tools that I used</h2>
+                <p>
+                    -   BepInex: this tool is a plugin / framework for modding in the game engine Unity. 
+                    This framework was vital to start modding.
+                   
+                </p>
+                <p>
+                    -   Harmony 2: Along with BepInex, this is a library that is vital for modding. 
+                    The library allows to edit functions before, during and after they are used.
+                </p>
+                <p>
+                    -   LethalLib: It is a specific library for a lot of features to simplify modding in Lethal Company. 
+                    I used this library to make it easier to edit items and edit info of areas in the game.
+                </p>
+                <p>
+                    -   UnityExplorer: an in-game UI for easier debugging and seeing how the game works. 
+                    This made it easier to play test and debug if there were any problems when playing with the mod, 
+                    as the main problem with modding is debugging.
+                </p>
+                <p>
+                    -   DnSpy: It is a debugger for assemblies. I used this tool for looking at post compiled code, 
+                    so I can edit it in my mod.
+                </p>
+                <p>
+                    -   LethalCompanyUnityTemplate: It is a Unity  tool where you can create items for the game. 
+                    The project was very handy to make some items for the game, I made the corpses into items here.
+                </p>
+                <p>
+                    -   AssetRipper: It is a tool to get assets from Unity files. I used this tool to get the corpses of the game, 
+                    so I can use them earlier when they are available and change them into its own item via the LethalCompanyUnityTemplate  tool.
+                </p>
+            </span>
+            <span>
+                <p>
+                    <h2>Approaching coding structures</h2>
+                <p>
+                    -   Starting to structure this project code, I had to take in mind a couple of other aspects like tools, 
+                    framework, the game I am modding on and the Unity engine. 
+                    With that I also wanted my project to be able to interact and use other mods without breaking functionality of other mods. 
+                    The primary function of this mod is only used at the start up of the game so it won’t take up resources during the actual main gameplay. 
+                   
+                </p>
+                <p>
+                    -   For the main mechanic of this project. 
+                    To make sure that the user had enough chances and options to make sure the project ran smoothly. 
+                     good example would be the ban lists. You have a list for preventing an item from being transformed, 
+                     but you also have the option to ban transformed items from being used while the game is running. 
+                     This makes it easier for the user to play the game, 
+                     so it has no need to restart the game to make this mod run the way it wants to.
+                </p>
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+
+
+</section>
+
+    <!--Contact-->
+    <section class="contactGrid" >
+        <h2  class="leftTitle">Contact</h2>
+        <div></div>
+        <div></div>
+        <a  href="mailto: Mathias.radder@hotmail.com" class="hoverable">
+            <img   src="Images/emailiconSmall.png" alt="Email">
+        </a>
+     
+        <a  href="https://mathias-radder.itch.io/" class="hoverable">
+            <img   src="Images/itch-io-icon.png" alt="Itch">
+        </a>
+       
+        <a  href="https://www.linkedin.com/in/mathias-radder-953841251/" class="hoverable">
+            <img  src="Images/LinkedIn_icon.png" alt="LinkedIn">
+        </a>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script>          
+    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // when scrolling down.
+        var scrolPos = 0;
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+            var newPos = document.documentElement.scrollTop;
+            var navbar = document.getElementById("navbar");
+
+            if(!isMobile)
+            {
+                navbar.style.transform = "translateY(0%)";
+                return;
+            }
+
+            if(newPos <= scrolPos)
+            {
+                navbar.style.transform = "translateY(0%)";
+            }
+            else
+            {
+                if(newPos > navbar.scrollHeight)
+                    navbar.style.transform = "translateY(-100%)";
+            }
+            scrolPos = newPos;
+        }
+    </script>
+</body>
+</html>

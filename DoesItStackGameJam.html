@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar" >
+        <h1>Mathias Radder</h1>
+        <div></div>
+        <div class="button" ><a href="index.html" > Home </a></div>
+           <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+            
+      <div class="dropdown">
+             <div class="dropbtn">My projects</button>
+                 <div class="dropdown-content">
+                     <a href="RemnantsMod.html">Remnants</a>
+                     <a href="DnDCampaign.html">Lore and setup (TTRPG)</a>
+                     <a href="DnDEncountersAndDungeons.html">Encounters and dungeons (TTRPG)</a>
+              </div>
+           </div></div>
+         <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->    
+         <div class="dropdown">
+             <div class="dropbtn">Intership projects</button>
+                 <div class="dropdown-content">
+                     <a href="LiveOpsProject.html">Live Ops</a>
+                     <a href="OffshoreWindParkProject.html">Offshore Wind Park</a>
+                     <a href="WastePikeProject.html">Waste Pike</a>
+                     <a href="DoesItStackGameJam.html">Does It Stack?</a>
+              </div>
+           </div></div>
+           <div class="dropdown">
+             <div class="dropbtn">School projects</button>
+                 <div class="dropdown-content">
+                     <a href="CARProject.html">C.A.R</a>
+                     <a href="GraphicsProject.html">Graphics Project</a>
+                     <a href="UnityProject.html">Unity Prototype</a>
+                     <a href="UE4Project.html">UE4 Prototype</a>
+                     <a href="StormyWeathers.html">Stormy Weathers</a>
+              </div>
+           </div></div>
+ 
+         <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+     </nav>
+ 
+
+
+    <!-- Main Title, photo and about -->
+    <section style="display: block; margin: auto;">
+        <h1 id="mainTitle">
+            Does It Stack?
+           </h1>
+          
+
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
+            <div></div>
+            <span>
+                <img  src="Images/DoesItStackGameJam/GameJamDoesItStack.png" alt="png of does it stack game jam">
+            </span>
+            <span>
+                <h2>The game</h2>
+                <p>
+                    In this part I helped in a group in a couple of days a prototype of their new virtual reality game “Does it stack?”.
+                    There I helped programming, the handling and stacking of items with that also a some other physics based AI.
+                </p>
+                <p>
+                    This game jam was done in two days.
+                </p>
+                <p>
+                    <h2>What I did during the game jam</h2>
+                </p>
+                <p>
+                    -   Handling holding items: With this feature I learned how to implement the default tools and found them to be sufficient for the limited time and game. 
+                </p>
+                <p>
+                    -   Items stacking: making use of the Unity features that increase the surface grip and with that checking the velocity to see if it is standing still enough.
+                </p>
+                <p>
+                    -   AI slug that attacks items: this part I failed to complete since the slug ai was meant to go on top of the items you can carry and move. 
+                    With the given time and experience I could not complete this part for the game jam in a good state. The hurdle that I could not overcome on time was that the slug was not good enough when it moves along the surface of an object and you hold that object in your hand.
+                </p>
+                <p>
+                    <h2>What I will do better next time</h2>
+                </p>
+                <p>
+                    Next time for a game jam, I will put more effort in estimating what can and can’t be done in a short amount of time.
+                </p>
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+
+</section>
+
+    <!--Contact-->
+    <section class="contactGrid" >
+        <h2  class="leftTitle">Contact</h2>
+        <div></div>
+        <div></div>
+        <a  href="mailto: Mathias.radder@hotmail.com" class="hoverable">
+            <img   src="Images/emailiconSmall.png" alt="Email">
+        </a>
+     
+        <a  href="https://mathias-radder.itch.io/" class="hoverable">
+            <img   src="Images/itch-io-icon.png" alt="Itch">
+        </a>
+       
+        <a  href="https://www.linkedin.com/in/mathias-radder-953841251/" class="hoverable">
+            <img  src="Images/LinkedIn_icon.png" alt="LinkedIn">
+        </a>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script>          
+    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // when scrolling down.
+        var scrolPos = 0;
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+            var newPos = document.documentElement.scrollTop;
+            var navbar = document.getElementById("navbar");
+
+            if(!isMobile)
+            {
+                navbar.style.transform = "translateY(0%)";
+                return;
+            }
+
+            if(newPos <= scrolPos)
+            {
+                navbar.style.transform = "translateY(0%)";
+            }
+            else
+            {
+                if(newPos > navbar.scrollHeight)
+                    navbar.style.transform = "translateY(-100%)";
+            }
+            scrolPos = newPos;
+        }
+    </script>
+</body>
+</html>

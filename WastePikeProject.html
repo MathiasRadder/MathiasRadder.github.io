@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar" >
+        <h1>Mathias Radder</h1>
+        <div></div>
+        <div class="button" ><a href="index.html" > Home </a></div>
+           <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+            
+      <div class="dropdown">
+             <div class="dropbtn">My projects</button>
+                 <div class="dropdown-content">
+                     <a href="RemnantsMod.html">Remnants</a>
+                     <a href="DnDCampaign.html">Lore and setup (TTRPG)</a>
+                     <a href="DnDEncountersAndDungeons.html">Encounters and dungeons (TTRPG)</a>
+              </div>
+           </div></div>
+         <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->    
+         <div class="dropdown">
+             <div class="dropbtn">Intership projects</button>
+                 <div class="dropdown-content">
+                     <a href="LiveOpsProject.html">Live Ops</a>
+                     <a href="OffshoreWindParkProject.html">Offshore Wind Park</a>
+                     <a href="WastePikeProject.html">Waste Pike</a>
+                     <a href="DoesItStackGameJam.html">Does It Stack?</a>
+              </div>
+           </div></div>
+           <div class="dropdown">
+             <div class="dropbtn">School projects</button>
+                 <div class="dropdown-content">
+                     <a href="CARProject.html">C.A.R</a>
+                     <a href="GraphicsProject.html">Graphics Project</a>
+                     <a href="UnityProject.html">Unity Prototype</a>
+                     <a href="UE4Project.html">UE4 Prototype</a>
+                     <a href="StormyWeathers.html">Stormy Weathers</a>
+              </div>
+           </div></div>
+ 
+         <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+     </nav>
+ 
+
+
+    <!-- Main Title, photo and about -->
+    <section style="display: block; margin: auto;">
+        <h1 id="mainTitle">
+           Waste Pike
+           </h1>
+          
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
+            <div></div>
+            <span>
+                <img  src="Images/WastePike/BossScenePart1.gif" alt="Gif boss scene">
+                <img src="Images/WastePike/WalkingScene.png" alt="png of walking scene">
+                <img src="Images/WastePike/BossFightThrowing.png" alt="png of throwing">
+                <img src="Images/WastePike/BossJumpScare.png" alt="png of BossJumpScare">
+            </span>
+            <span>
+                <h2>The game</h2>
+                <p>
+                    Waste Pike is a vertical slice game project in Unity Virtual Reality. 
+                    My contribution was to set up and program two entire scenes. Additionally, 
+                    I added animation tools to the player model in several other scenes. 
+                    The scenes I worked the most on are the boss battle scene and the end scene. 
+                    I worked on programming with the animation, UI, scenes and events, implementing animation physics tools.
+                </p>
+                <p>
+                    This project was done in a team of other interns and one co-worker. I joined in the last couple of weeks. 
+                    My main function in the project was gameplay programmer.
+                </p>
+                <p>
+                <h2>What my tasks were</h2>
+                </p>      
+                <p>
+                    -   Movement: I worked out and implemented the movement mechanics of the player and the boss, 
+                    creating a linear movement for the player and a spline movement for the boss.
+                </p>
+                <p>
+                    -   Interactions: Implementing the throwing mechanic in VR. It was my first time doing something like this. 
+                    To complete this mechanic I used a parabola to mimic a throw, 
+                    along with focusing on making every little part of the throwing mechanic easily tweak-able.
+                </p> 
+                <p>
+                    -   Sound effects: I implemented all sound effects, including the background music, 
+                    player/boss movement and environment sounds.
+                </p> 
+                <p>
+                    -   Terrain changes: I implemented a dynamic scene environment in which the terrain changes as the player progresses in the scene.
+                </p> 
+                <p>
+                    -   Programming with animation: creating events in the animation frame in order to obtain smooth animation. 
+                    Same goes for the boss scene, changing animation states depending on what happens, 
+                    like the animation changes depending where the boss is hit. 
+                    Additionally I made the animation as easily customizable.
+                </p>
+                <p>
+                    -   Animation physics tools: Implementing the final touches I added physics animation tools to the in game characters. 
+                    Making the character animation interact with the environment in a more realistic way. 
+                    For example walking on certain surfaces, a more lifelike movement when bumping into objects and getting hit by a projectile.
+                </p>  
+                <p>
+                    -   UI: Helping with the UI of what I learned from the other projects, 
+                    making sure everything goes well and transition to the next scenes and events.
+                </p>   
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+            <img style="margin-left: -2rem;" src="Images/WastePike/EndBossScene.gif" alt="gif of end boss scene">
+            <img style="margin-left: -2rem;" src="Images/WastePike/EndScene.png" alt="png of end scene">
+        </span>
+        <span>
+            <p>
+                <h2>Struggles and how I overcame them</h2>
+            <p>
+                Adding lots of animation physics tools at the end of a vertical slice. 
+                This was requested at the last two weeks of development where we clean up or added extra detail to the game. 
+                My task was to implement several tools that improve model animations, 
+                like physics and overall smoother movement along with that. 
+                I got through this issue by learning a lot of tools in a small amount of time and step by step adding each one with proper testing. Unfortunately, 
+                I could not add the last requested feature, but that was deliberate choice to make sure that all other features work smoothly and without issues.
+            </p>
+            <p>
+                <h2>What I will do better next time</h2>
+            </p>
+            <p>
+                For next time, I will be sure to set up the base of the objects in a way that they are easily changed in every way and not just the scripts. 
+                So that they are more easily updated when adding huge structures and tools to it.
+            </p>
+          
+        </span>
+        <div></div>
+    </div>
+</section>
+
+
+
+</section>
+
+    <!--Contact-->
+    <section class="contactGrid" >
+        <h2  class="leftTitle">Contact</h2>
+        <div></div>
+        <div></div>
+        <a  href="mailto: Mathias.radder@hotmail.com" class="hoverable">
+            <img   src="Images/emailiconSmall.png" alt="Email">
+        </a>
+     
+        <a  href="https://mathias-radder.itch.io/" class="hoverable">
+            <img   src="Images/itch-io-icon.png" alt="Itch">
+        </a>
+       
+        <a  href="https://www.linkedin.com/in/mathias-radder-953841251/" class="hoverable">
+            <img  src="Images/LinkedIn_icon.png" alt="LinkedIn">
+        </a>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script>          
+    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // when scrolling down.
+        var scrolPos = 0;
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+            var newPos = document.documentElement.scrollTop;
+            var navbar = document.getElementById("navbar");
+
+            if(!isMobile)
+            {
+                navbar.style.transform = "translateY(0%)";
+                return;
+            }
+
+            if(newPos <= scrolPos)
+            {
+                navbar.style.transform = "translateY(0%)";
+            }
+            else
+            {
+                if(newPos > navbar.scrollHeight)
+                    navbar.style.transform = "translateY(-100%)";
+            }
+            scrolPos = newPos;
+        }
+    </script>
+</body>
+</html>

@@ -11,25 +11,44 @@
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav id="navbar">
-        <div><h1>Mathias Radder</h1></div>
+    <nav id="navbar" >
+        <h1>Mathias Radder</h1>
         <div></div>
         <div class="button" ><a href="index.html" > Home </a></div>
-          <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
-        <div class="dropdown">
-            <div class="dropbtn">Projects</button>
-                <div class="dropdown-content">
-                    <a href="CARProject.html">C.A.R</a>
-                    <a href="GraphicsProject.html">Graphics Project</a>
-                    <a href="UnityProject.html">Unity Prototype</a>
-                    <a href="UE4Project.html">UE4 Prototype</a>
-                    <a href="StormyWeathers.html">Stormy Weathers</a>
-             </div>
-          </div></div>
-        <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->
-
-        <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" > CVPDF </a></div>
-    </nav>
+           <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+            
+      <div class="dropdown">
+             <div class="dropbtn">My projects</button>
+                 <div class="dropdown-content">
+                     <a href="RemnantsMod.html">Remnants</a>
+                     <a href="DnDCampaign.html">Lore and setup (TTRPG)</a>
+                     <a href="DnDEncountersAndDungeons.html">Encounters and dungeons (TTRPG)</a>
+              </div>
+           </div></div>
+         <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->    
+         <div class="dropdown">
+             <div class="dropbtn">Intership projects</button>
+                 <div class="dropdown-content">
+                     <a href="LiveOpsProject.html">Live Ops</a>
+                     <a href="OffshoreWindParkProject.html">Offshore Wind Park</a>
+                     <a href="WastePikeProject.html">Waste Pike</a>
+                     <a href="DoesItStackGameJam.html">Does It Stack?</a>
+              </div>
+           </div></div>
+           <div class="dropdown">
+             <div class="dropbtn">School projects</button>
+                 <div class="dropdown-content">
+                     <a href="CARProject.html">C.A.R</a>
+                     <a href="GraphicsProject.html">Graphics Project</a>
+                     <a href="UnityProject.html">Unity Prototype</a>
+                     <a href="UE4Project.html">UE4 Prototype</a>
+                     <a href="StormyWeathers.html">Stormy Weathers</a>
+              </div>
+           </div></div>
+ 
+         <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+     </nav>
+ 
 
 
     <!-- Main Title, photo and about -->
@@ -44,8 +63,10 @@
            <div style="margin-top: 5%;" class="mainSection">
             <div></div>
             <span>
-            <img src="Images/GameProject/gameplay02.gif" alt="Gif of game">
-            <img src="Images/GameProject/gameplay03.gif" alt="Gif of game">
+            <img src="Images/GameProject/gameplay02.gif" alt="Gif of the game">
+            <img src="Images/GameProject/gameplay03.gif" alt="Gif of the game">
+            <img src="Images/GameProject/gameplay01.gif" alt="Gif of game">
+            <img src="Images/GameProject/Sequence 01_2.gif" alt="Gif of game">
             </span>
             <span>
                 <p>
@@ -69,26 +90,46 @@
                     <h2>What I worked on</h2>
                 </p>
                 <p>
-                    -	Car movement
+                    -	<b>Car movement:</b> 
+                    The car movement was one of the main mechanics of the game but with the limited time, 
+                    I Implemented an alternative car base unlike other cars in video games. 
+                    But it still worked well and I made it so, that it can be well adjusted in detail.
+                    I learned a lot of the importance of the movement mechanics and how important it is to study about the main mechanic of a game before starting with the design and creation of it.
                 </p>
                 <p>   
-                    -	Game physics
+                    -	<b>Game physics:</b> 
+                    This was my most favorite part of developing this game, 
+                    using a lot of math and logic to make the cars bounce and crash  in an exciting way. 
+                    Of course, the logic was based not on real life, 
+                    but more in a cartoonish way. Along with the reference of other games like Smash Bros and Brawlhalla, 
+                    the biggest difference was that the bouncing was on a different axis and with cars rather than characters. 
+                    This is why I made a bounce point system whenever a car would hit another car. 
+                    Depending on the speed, directions and placement of hitting, 
+                    the interaction would be different and the points would be changed. This made it more logical, 
+                    fun and fair whenever the cars would hit each other. 
+                    Rewarding the player who was the highest velocity and the one who was crashing into the other one.
+                <p>   
+                    The only problems that I had was time management and play testing. 
+                    I did not have a lot of time to make it perfect which caused some hastily code to be dropped in there. 
+                    Which means that some parts of the physics would not be able to easily be fine tuned. 
+                    A good example would be the up velocity suppression, 
+                    it works but it is not easy changed due to the lack of time.
+                </p>
+               
+                <p>  
+                    -	<b>All the power ups/items</b>
                 </p>
                 <p>  
-                    -	All the power ups/items
+                    -	<b>Game design</b>
                 </p>
                 <p>  
-                    -	Game design
+                    -	<b>Map design</b>
                 </p>
                 <p>  
-                    -	Map design
+                    -	<b>Game loop</b>
                 </p>
                 <p>  
-                    -	Game loop
-                </p>
-                <p>  
-                    -	Keeping track of kills, collisions and velocity
-                    
+                    -	<b>Keeping track of kills, collisions and velocity</b>  
                  <p>             
             </span>
             <div></div>
@@ -101,9 +142,8 @@
     <div style="margin-top: 5%;" class="mainSection">
         <div></div>
         <span>
-        <img src="Images/GameProject/gameplay01.gif" alt="Gif of game">
+        <img src="Images/GameProject/CarArenaRumbleLogo.png" alt="png of logo">
         <img src="Images/GameProject/gameplayMine1_1.gif" alt="Gif of game">
-        <img src="Images/GameProject/Sequence 01_2.gif" alt="Gif of game">
         <img src="Images/GameProject/ram_1.gif" alt="Gif of game">
         </span>
         <span>

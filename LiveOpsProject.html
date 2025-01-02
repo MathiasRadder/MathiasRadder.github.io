@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar" >
+        <h1>Mathias Radder</h1>
+        <div></div>
+        <div class="button" ><a href="index.html" > Home </a></div>
+           <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+            
+      <div class="dropdown">
+             <div class="dropbtn">My projects</button>
+                 <div class="dropdown-content">
+                     <a href="RemnantsMod.html">Remnants</a>
+                     <a href="DnDCampaign.html">Lore and setup (TTRPG)</a>
+                     <a href="DnDEncountersAndDungeons.html">Encounters and dungeons (TTRPG)</a>
+              </div>
+           </div></div>
+         <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->    
+         <div class="dropdown">
+             <div class="dropbtn">Intership projects</button>
+                 <div class="dropdown-content">
+                     <a href="LiveOpsProject.html">Live Ops</a>
+                     <a href="OffshoreWindParkProject.html">Offshore Wind Park</a>
+                     <a href="WastePikeProject.html">Waste Pike</a>
+                     <a href="DoesItStackGameJam.html">Does It Stack?</a>
+              </div>
+           </div></div>
+           <div class="dropdown">
+             <div class="dropbtn">School projects</button>
+                 <div class="dropdown-content">
+                     <a href="CARProject.html">C.A.R</a>
+                     <a href="GraphicsProject.html">Graphics Project</a>
+                     <a href="UnityProject.html">Unity Prototype</a>
+                     <a href="UE4Project.html">UE4 Prototype</a>
+                     <a href="StormyWeathers.html">Stormy Weathers</a>
+              </div>
+           </div></div>
+ 
+         <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
+     </nav>
+ 
+
+
+    <!-- Main Title, photo and about -->
+    <section style="display: block; margin: auto;">
+        <h1 id="mainTitle">
+            Live Ops
+           </h1>
+            <div style="margin: auto; margin-top: 3rem;" class="mainSection">
+            <div></div>
+            <span>
+                <img src="Images/LiveOps/StartUpWithGameService.png" alt="jpg login gaming service structure">
+                <img src="Images/LiveOps/UnityGamingServices.png" alt="jpg gaming service structure">
+                <img src="Images/LiveOps/SignedSteam.jpg" alt="jpg of client signed into steam">
+            </span>
+            <span>
+                <h2>What I added to the unity project</h2>
+                <p>
+                    Setting up the live service elements into a unity prototype game, on the main focus of Live Ops.
+                    In this game I set up the account login (including via Steam), data and progress, the store, designed the economy loop, added daily quests to the multiplayer, and working on the UI.
+                    Apart from that I learned to programming the server and communicate correctly to the players.
+                    
+                </p>
+                <p>
+                    This task took two to three weeks to finish, 
+                    a lot of that time was spent on learning and testing my way around servers, 
+                    economy loops and online features in a unity project.
+                </p>
+                <h2>The tasks in detail</h2>
+                <p>
+                    -  Economy loop of the game: To start, 
+                    I first designed a structure for the in-game economy based on certain given requirements. 
+                </p>
+                <p>
+                    -   Live Ops Economy: With the economy loop finished, I set up some logic in Live ops for the testing of purchases.
+                </p>  
+                <p>
+                    -   Logging in: the log in is not the most difficult part, but a lot goes on and that means a lot can go wrong. 
+                    Therefore, I focused on visual feedback so that you can easily see and understand what is going on and see if something goes wrong when logging in.
+                </p> 
+                <p>
+                    -   Creating time based quests with rewards: With the use of Live Ops on the server and in the project 
+                    I managed to add a time based quests with rewards that refresh after a given time. 
+                    When refreshed, different quests are shown to the players.
+                </p> 
+                <p>
+                    -   Programming on the servers (cloud code): This part was new to me, 
+                    it was one of the first times learning Javascript and using the cloud code libraries. 
+                    I programmed what to keep in check, like time, quests and what to save and load in the player data.
+                </p>                 
+            </span>
+            <div></div>
+        </div>
+    </section>
+
+    
+<section>
+    <div style="margin-top: 5%;" class="mainSection">
+        <div></div>
+        <span>
+            <img  src="Images/LiveOps/DailyQuests.jpg" alt="png of unity prototype">
+        </span>
+        <span>
+            <p>
+                <h2>What i learned</h2>
+            </p>
+                -   Servers: I learned a lot about how the relation between servers and users work. The complexity, 
+                safety, security and performance wise.
+            </p>
+            <p>
+                -   I learned about all the structures in the Unity project and from the server side such as: account progress, 
+                account data, server time, the online store and how all of it fits well together.
+            </p>
+            <p>
+                -   The good practices on how to use live ops so it is easier to find bugs, 
+                maintain your code and your economy from the server side.
+            </p>
+            <p>
+                -   Programming multiplayer: I learned how to program multiplayer in the game that connects to the quests 
+                which then communicates to the server.
+            </p>
+            <p>
+                <h2>Struggles and how I overcame them</h2>
+            </p>
+            <p>
+                Working with a massive project and setting up live ops, 
+                quests and an economy loop in it without creating a lot of trouble for other people. This was a big struggle, 
+                because I was scared to screw up for a lot of other people if I were to just bulldoze my way through.
+            </p>
+            <p>
+                Therefore, I spent a lot of time reading documentation, 
+                testing out Live Ops on a blank project and writing down the structures on what I need to add and need to do. 
+                This helped with creating a structure that only intervenes in the project when absolutely necessary.           
+            </p>
+            <p>
+                <h2>What I will do better next time</h2>
+            </p>
+            <p>
+                I struggled a lot with testing cloud code, debugging it. 
+                It was a big struggle and next time I will find a better tool to work with rather than the default, 
+                so I can debug and test the code easier.
+            </p>
+            </span>
+        <div></div>
+    </div>
+</section>
+
+
+
+</section>
+
+    <!--Contact-->
+    <section class="contactGrid" >
+        <h2  class="leftTitle">Contact</h2>
+        <div></div>
+        <div></div>
+        <a  href="mailto: Mathias.radder@hotmail.com" class="hoverable">
+            <img   src="Images/emailiconSmall.png" alt="Email">
+        </a>
+     
+        <a  href="https://mathias-radder.itch.io/" class="hoverable">
+            <img   src="Images/itch-io-icon.png" alt="Itch">
+        </a>
+       
+        <a  href="https://www.linkedin.com/in/mathias-radder-953841251/" class="hoverable">
+            <img  src="Images/LinkedIn_icon.png" alt="LinkedIn">
+        </a>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script>          
+    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // when scrolling down.
+        var scrolPos = 0;
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+            var newPos = document.documentElement.scrollTop;
+            var navbar = document.getElementById("navbar");
+
+            if(!isMobile)
+            {
+                navbar.style.transform = "translateY(0%)";
+                return;
+            }
+
+            if(newPos <= scrolPos)
+            {
+                navbar.style.transform = "translateY(0%)";
+            }
+            else
+            {
+                if(newPos > navbar.scrollHeight)
+                    navbar.style.transform = "translateY(-100%)";
+            }
+            scrolPos = newPos;
+        }
+    </script>
+</body>
+</html>

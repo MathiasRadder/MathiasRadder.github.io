@@ -11,13 +11,32 @@
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav id="navbar">
-        <div><h1>Mathias Radder</h1></div>
-        <div></div>
-        <div class="button" ><a href="index.html" > Home </a></div>
+    <nav id="navbar" >
+       <h1>Mathias Radder</h1>
+       <div></div>
+       <div class="button" ><a href="index.html" > Home </a></div>
           <!-- I got this from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+           
+     <div class="dropdown">
+            <div class="dropbtn">My projects</button>
+                <div class="dropdown-content">
+                    <a href="RemnantsMod.html">Remnants</a>
+                    <a href="DnDCampaign.html">Lore and setup (TTRPG)</a>
+                    <a href="DnDEncountersAndDungeons.html">Encounters and dungeons (TTRPG)</a>
+             </div>
+          </div></div>
+        <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->    
         <div class="dropdown">
-            <div class="dropbtn">Projects</button>
+            <div class="dropbtn">Intership projects</button>
+                <div class="dropdown-content">
+                    <a href="LiveOpsProject.html">Live Ops</a>
+                    <a href="OffshoreWindParkProject.html">Offshore Wind Park</a>
+                    <a href="WastePikeProject.html">Waste Pike</a>
+                    <a href="DoesItStackGameJam.html">Does It Stack?</a>
+             </div>
+          </div></div>
+          <div class="dropdown">
+            <div class="dropbtn">School projects</button>
                 <div class="dropdown-content">
                     <a href="CARProject.html">C.A.R</a>
                     <a href="GraphicsProject.html">Graphics Project</a>
@@ -26,7 +45,6 @@
                     <a href="StormyWeathers.html">Stormy Weathers</a>
              </div>
           </div></div>
-        <!--  <div class="button"><a href="#" class="buttonList"> Projects </a></div> -->
 
         <div class="button"><a href="Resources/CV_Mathias_Radder.pdf" class="button"> CVPDF </a></div>
     </nav>
@@ -38,19 +56,19 @@
         </h1>
         <div class="mainSection">
             <div></div>
-            <img src="Images/SelfieMathias.jpg" alt="Picture of me">
+            <img src="Images/PortfolioPhoto.jpg" alt="Picture of me">
             <span>
                 <p>
-                    <h2>Gameplay programmer</h2>
+                    <h2>Programmer</h2>
                 </p>
                 <p>
-                    Hello, I am a game developer student in Digital Arts Entertainment.
+                    I am a programmer specialized in C++ and C# and a game designer.
                 </p>
                 <p>
-                    Currently I am looking for an internship. Feel free to email me or add me on LinkedIn if you are interested!
+                    I am able to work interdependently and in a structured way. I am very eager to learn and I quickly get the hang of new things. Teamwork and good communication are of great value to me.
                 </p>
                 <p>
-                    If you not just want a game developer but also someone that is very good at communication, constructive feedback, and a pinch of game design!
+                    Currently I am looking for a job and open to new challenges. Feel free to email me or add me on LinkedIn if you are interested!
                 </p>
                 <p>
                     <h2>Contact</h2>
@@ -77,13 +95,103 @@
 
 
 
-
-    <!-- Projects -->
+<!-- My own projects -->
    <!-- Project title -->
-   <h1  class="midTitle">Projects</h1>
+   <h1  class="midTitle">My own projects</h1>
 
     <section class="projectList">
-        <!-- Project 1 -->
+        <!-- Project 1 Remnants mod -->
+        <a class="projectCard" href="RemnantsMod.html">
+            <img src="Images/RemnantsMod/RemnantsModIcon.png" alt="Image description">
+            <p>
+                <b>Remnants mod</b> A mod project for the game Lethal Company which is made in <b>Unity</b>.
+                The mod duplicates and edits store items from vanilla and mods and make them be able to be found in the game world, like remnants.
+                
+            </p>
+        </a>
+        <!-- Project 2 DnD lore and setup -->
+        <a class="projectCard" href="DnDCampaign.html">
+            <img src="Images/DnDCampaign/Campaign1Map.png" alt="Image description">
+            <p>
+                <b>Game design, lore and setup, Dungeon and Dragons (TTRPG)</b> 
+            </p>
+            <p>Being a dungeon master for three campaigns has taught me a lot of game design, 
+                world creation, planning and creating a good environment for the players.</p>
+        </a>
+        <!-- Project 3 DnD combat and encounters -->
+        <a class="projectCard" href="DnDEncountersAndDungeons.html">
+            <img src="Images/DnDBattleMaps/ValleyGnollCamp.png" alt="Battle map gnol camp png">
+            <p>
+                <b>Game design encounters and dungeons, Dungeon and Dragons (TTRPG)</b>      
+            </p>
+            <p>Balancing combat encounters, creating battle maps and players freedom are vital in a tabletop role-playing game. 
+            In my 5 years experience I learned a lot of what that meant, 
+            creating battle maps and receiving much feedback has brought me far. </p>
+        </a>
+    </section>
+
+    <!-- Internship projects -->
+   <!-- Project title -->
+   <h1  class="midTitle">Internship projects</h1>
+
+   <section class="projectList">
+       <!-- Project 1 Live Ops -->
+       <a class="projectCard" href="LiveOpsProject.html">
+           <img src="Images/LiveOps/UnityGamingServices.png" alt="Image description">
+           <p>
+            <b>Live Ops</b> 
+        </p>
+        <p>
+            Adding a live service to a Unity game and learning how the intricacies work around it.
+            Setting up live services, like a store, character progress, account creation, connection with steam, 
+            creating an economy loop and more.
+        </p>
+    </a>
+       </a>
+
+       <!-- Project 2 Offshore wind park project -->
+       <a class="projectCard" href="OffshoreWindParkProject.html">
+           <img src="Images/OffshoreWindPark/SeaWindParkBuilding.jpg" alt="Jpg of Sea wind park building">
+           <p>
+               <b>Offshore wind park project</b> 
+           </p>
+           <p>
+            Here I worked on an offshore wind park project, 
+            I worked in Unity to create a UI and process and display data received from the wind turbines. 
+        </p>
+       </a>
+        <!-- Project 3 Waste Pike project -->
+       <a class="projectCard" href="WastePikeProject.html">
+           <img src="Images/WastePike/BossJumpScare.png" alt="png boss jumpscare">
+           <p>
+               <b>Waste Pike</b>      
+           </p>
+           <p>
+            Waste Pike is a vertical slice game project in unity virtual reality. 
+            My part was to set up and program two scenes and other scenes where I added some animation tools to the player model. 
+            The scenes where I worked the most are the boss battle scene and the end scene. I worked on programming with the animation, UI, scenes and events, adding animation physics tools. 
+            </p>
+       </a>
+        <!-- Project 4 Does it stack t -->
+       <a class="projectCard" href="DoesItStackGameJam.html">
+           <img src="Images/DoesItStackGameJam/GameJamDoesItStack.png" alt="png does it stack">
+           <p>
+            <b>Does it stack? Game jam</b>      
+        </p>
+        <p>
+            In this game jam I worked in a group to make the VR Unity prototype game “Does it stack?”.
+            I helped programming the handling and stacking of items and also at other physics based AI.
+         </p>
+        </a>
+   </section>
+
+
+    <!-- School projects -->
+   <!-- Project title -->
+   <h1  class="midTitle">School projects</h1>
+
+    <section class="projectList">
+       <!-- Project 1 Car arena rumble group project -->
         <a class="projectCard" href="CARProject.html">
             <img src="Images/GameProject/CarArenaRumbleLogo.png" alt="Image description">
             <p>
@@ -92,8 +200,7 @@
                 
             </p>
         </a>
-
-        <!-- Project 2 etc -->
+        <!-- Project 2 Graphics, raytracing and rasterizer-->
         <a class="projectCard" href="GraphicsProject.html">
             <img src="Images/GraphicProg/GraphicsPorject.png" alt="Image description">
             <p>
@@ -101,6 +208,7 @@
             </p>
             <p>On this project, I learned how to do <b>raytracing</b> and <b>rasterizer</b> in a  <b>c++ custom school engine</b>. For rasterizing it was in <b>software</b> and <b>hardware</b>.</p>
         </a>
+        <!-- Project 3 unity prototype -->
         <a class="projectCard" href="UnityProject.html">
             <img src="Images/UnityPrototype/Radder_Mathias_Unity_Screenshot03.png" alt="Image description">
             <p>
@@ -109,6 +217,7 @@
             <p>An action platformer game where the main mechanics is around time.
                 This is a prototype done in unity, where I learned how unity works, how to do prototyping, brainstorming, giving, and receiving constructive feedback. </p>
         </a>
+        <!-- Project 3 UE4 prototype -->
         <a class="projectCard" href="UE4Project.html">
             <img src="Images/UE4Prototype/Radder_Mathias_Unreal_Screenshot02.png" alt="Image description">
             <p>
@@ -117,6 +226,7 @@
                 
             </p>
         </a>
+        <!-- Project 3 Stormy Weathers game jam game -->
         <a class="projectCard" href="StormyWeathers.html">
             <img src="Images/StormyWeathers/StormyWeathersFront.png" alt="Image description">
             <p>
@@ -130,8 +240,6 @@
 
 
     <!--Contact-->
-
-
     <section class="contactGrid" >
         <h2  class="leftTitle">Contact</h2>
         <div></div>
@@ -154,7 +262,7 @@
     <footer></footer>
 
     <script>          
-    // Lil script to make the navbar appear when scrolling up on mobile devices, and disappear 
+    // Small script to make the navbar appear when scrolling up on mobile devices, and disappear 
     // when scrolling down.
         var scrolPos = 0;
         window.onscroll = function() {scrollFunction()};
